@@ -1,0 +1,675 @@
+:root {
+    --customRed: #de1c22;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav__options {
+    color: var(--customRed);
+    padding-right: 80px;
+}
+
+.message__icon {
+    width: 20px;
+}
+
+.logo {
+    width: 64px;
+    margin-left: 22px;
+}
+
+.candidates__container__parent {
+    margin-inline: 70px;
+}
+
+.jobs__container__parent {
+    grid-template-columns: 3fr 1fr;
+}
+
+.filter__dropdown {
+    position: relative;
+    padding: 10px;
+    color: #7c7c7c;
+    border: solid 1px #c7c7c7;
+    outline: none;
+    padding: 0 16px;
+    height: 48px;
+    width: 286px;
+}
+
+.breadcrumb__menu {
+    position: relative;
+    width: 24px;
+    height: 4px;
+    background-color: var(--customRed);
+    margin: 0px 8px;
+    margin-right: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.breadcrumb__menu::before,
+.breadcrumb__menu::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: var(--customRed);
+    cursor: pointer;
+}
+
+.breadcrumb__menu::after {
+    translate: 0px 8px;
+}
+
+.breadcrumb__menu::before {
+    translate: 0px -8px;
+}
+
+.nav__options {
+    color: var(--customRed);
+    right: 0;
+    top: 84px;
+}
+
+.nav__options .option {
+    color: var(--customRed);
+}
+
+.user-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 32px;
+    height: 32px;
+}
+
+.user-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.activity-signal {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: #008556;
+}
+
+.nav_two_focus {
+    color: var(--customRed);
+    background-color: #f9d3d4;
+}
+
+.page__title {
+    margin-bottom: 32px;
+}
+
+.add_new_job {
+    background-color: var(--customRed);
+    width: 200px;
+    height: 48px;
+}
+
+.search_job_titles {
+    width: 286px;
+    height: 48px;
+    border: solid 1px #c7c7c7;
+    max-width: 300px;
+    outline: none;
+}
+
+.dropdown-toggle::after {
+    font-size: 18px;
+}
+
+.filter__button {
+    border-color: #c7c7c7;
+    width: 300px;
+}
+
+.filter__button span {
+    color: #656565;
+}
+
+thead {
+    border-bottom: 1px solid #000000;
+}
+
+.border_bottom {
+    border-style: solid;
+}
+
+.awaiting_review {
+    padding-inline: 12px;
+    max-width: fit-content;
+    font-size: 12px;
+    background-color: #ffe1be;
+    color: #e86825;
+}
+
+.pool_open {
+    background-color: #d6f3e2;
+    color: #008556;
+}
+
+.table__container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table__font {
+    font-size: 14px;
+}
+
+.ellipsis__menu {
+    height: 18px;
+}
+
+.billing__container {
+    margin-top: 80px;
+    border-color: #e4e4e4;
+    height: max-content;
+}
+
+.billing__container .hours__remaining {
+    font-size: 20px;
+}
+
+.billing__container .settings__icon {
+    height: 20px;
+    width: 20px;
+}
+
+.billing__container .hours__left {
+    font-size: 12px;
+    margin-top: 19px;
+}
+
+.billing__container .progress_bar {
+    height: 37px;
+    width: 100%;
+    background-color: #e4e4e4;
+}
+
+.billing__container .progress_bar .progress {
+    height: 37px;
+    width: 80%;
+}
+
+.billing__container .pause__billing {
+    border: 2px solid var(--customRed);
+    border-radius: 8px;
+    padding-block: 12px;
+    color: var(--customRed);
+}
+
+.billing__container .pause__billing img {
+    width: 25px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .candidates__container__parent {
+        margin-inline: 6px;
+    }
+
+    .candidates__search input,
+    select,
+    button {
+        width: 100vw;
+        margin: 4px;
+        padding: 0;
+    }
+}
+
+
+
+/* login page specific css */
+.login__nav {
+    margin-left: 40px;
+    margin-right: 82px;
+}
+
+.login__nav img {
+    width: 48px;
+    height: 38px;
+}
+
+.login__nav div button {
+    padding: 10px;
+    background-color: var(--customRed);
+    font-size: 14px;
+    font-weight: 600;
+    width: max-content;
+}
+
+.login__nav div a {
+    margin-inline: 50px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.login__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login__container .cover {
+    width: 100%;
+}
+
+.login__container .form_container .form__content {
+    max-width: 448px;
+    margin: 0 auto;
+}
+
+.login__container .form_container .form__content form input,
+.login__container .form_container .form__content form button {
+    width: 100%;
+}
+
+.login__container .form_container .form__content h1 {
+    font-size: 40px;
+}
+
+.login__container .form_container .form__content p {
+    font-size: 18px;
+    color: #c7c7c7;
+    margin-bottom: 48px;
+}
+
+.login__container .form_container .form__content form label {
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.login__container .form_container .form__content form input[type="checkbox"] {
+    max-width: fit-content;
+}
+
+.login__container .form_container .form__content form input[type="email"],
+.login__container .form_container .form__content form input[type="password"] {
+    border: solid 1px #c7c7c7;
+}
+
+.login__container .form_container .form__content form input,
+.login__container .form_container .form__content form button,
+.login__container .form_container .form__content button {
+    font-size: 16px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login__container .form_container .form__content button {
+    width: 100%;
+    border: solid 1px #656565;
+    font-weight: 600;
+}
+
+.login__container .form_container .form__content form .remember__forgot {
+    margin-bottom: 16px;
+}
+
+.login__container .form_container .form__content form .forgot {
+    color: var(--customRed);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login__container .form_container .form__content form .sign__in__red {
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--customRed);
+}
+
+.login__container .form_container .form__content .no__account {
+    font-size: 14px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.login__container .form_container .form__content .no__account a {
+    color: var(--customRed);
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+/* forgot password reset */
+.forgot_pass_container {
+    padding: 40px;
+    border: solid 1px #a1a1a1;
+    height: max-content;
+    border-radius: 8px;
+    max-width: 448px;
+    margin: 0 auto;
+    margin-top: 277px;
+}
+
+.forgot_pass_container h1 {
+    font-size: 30px;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+
+.forgot_pass_container button {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--customRed);
+    border: none;
+    border-radius: 4px;
+    padding-block: 12px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.forgot_pass_container small {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin-bottom: 24px;
+}
+
+.forgot_pass_container h6 {
+    color: var(--customRed);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+    .login__nav {
+        margin-right: 40px;
+    }
+
+    .login__nav div a {
+        margin-inline: 8px;
+    }
+
+    .login__container .cover {
+        display: none;
+    }
+
+    .login__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .login__container .form_container .form__content,
+    .forgot_pass_container {
+        max-width: 90vw;
+    }
+}
+
+
+/* reset password page */
+.reset_pass_container {
+    /* height: 100vh; */
+    padding-bottom: 200px;
+}
+
+.reset_pass_container form {
+    padding: 40px 40px 96px;
+    border-radius: 8px;
+    border: solid 1px #a1a1a1;
+}
+.reset_pass_container h1{
+    font-size: 34px;
+    font-weight: bold;
+}
+.reset_pass_container .for_account{
+    text-align: center;
+    font-size: 20px;
+    color: #a1a1a1;
+    margin-bottom: 24px;
+}
+.reset_pass_container form label{
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+.at_least_condition_1{
+    padding-block: 6px;
+    margin-block: 8px;
+    text-align: center;
+}
+.at_least_condition_2{
+    padding-block: 6px;
+    margin-block: 0px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+/* password input eye */
+.password-input {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    padding-inline: 16px;
+    padding-block: 12px;
+    border: solid 1px #c7c7c7;
+    border-radius: 4px;
+}
+
+.password-input input {
+    padding-right: 40px;
+    /* To make room for the eye icon */
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+}
+.password-input input:focus{
+    outline: none;
+}
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Style the eye icon to show/hide the password */
+.password-icon img {
+    width: 16px;
+}
+
+/* Style the eye icon when the password is visible */
+.password-input input[type="password"]:not(:placeholder-shown)+.password-icon i {
+    color: #333;
+}
+.reset_pass_container button{
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--customRed);
+    border: none;
+    margin-top: 16px;
+    color: white;
+    padding-block: 12px;
+    border-radius: 4px;
+    max-width: 100%;
+}
+@media only screen and (max-width: 900px) {
+    .reset_pass_container form{
+        max-width: 90vw;
+        margin: 0 auto;
+
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .reset_pass_container form{
+        width: 35%;
+        margin-top: 119px;
+    }
+}
+
+
+
+
+/* signup */
+.password_conditions{
+    margin-bottom: 64px;
+    color: gray;
+}
+
+/* create employer */
+.create_employer_container{
+    padding-inline: 290px;
+    width: 100vw;
+    padding-bottom: 100px;
+}
+.create_employer_container h1{
+    width: 100%;
+    margin-top: 125px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.create_employer_container form{
+    width: 100%;
+}
+.create_employer_container .form__container{
+    max-width: 420px;
+}
+.create_employer_container small{
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+}
+.create_employer_container form label{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.create_employer_container form input{
+    width: 100%;
+    text-align: left;
+    padding-inline: 16px;
+    padding-block: 12px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    margin-bottom: 16px;
+}
+.create_employer_container form input[type="checkbox"]{
+    width: max-content;
+    margin-right: 10px;
+    text-align: left;
+}
+.create_employer_container .filter__button__employer{
+    width: 140px;
+}
+.create_employer_container .dropdown{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.create_employer_container .skip__save{
+    width: 100%;
+    text-align: right;
+    margin-top: 125px;
+}
+.create_employer_hr{
+    margin-bottom: 40px;
+    color: black;
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+}
+.create_employer_container .button{
+    width: 100%;
+    text-align: right;
+    margin-top: 125px;
+}
+.create_employer_container .skip__save button{
+    border: solid 1px #656565;
+    font-weight: 600;
+    background-color: white;
+    padding-block: 10px;
+    border-radius: 4px;
+    padding-inline: 24px;
+}
+.create_employer_container .skip__save button:disabled{
+    border: none;
+    background-color: #e4e4e4;
+}
+.create_employer_container form small{
+    font-size: 12px;
+}
+.modal-backdrop {
+    background-color: rgba(0,0,0,0.7);
+  }
+@media only screen and (max-width: 900px) {
+    .create_employer_container{
+        padding-inline: 20px;
+    }
+    .create_employer_container .skip__save button{
+        width: 100%;
+    }
+}
+
+
+/* employer modal */
+.modal_review_inputs{
+    padding: 32px;
+}
+.modal_review_inputs h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.modal_review_inputs .you_can_edit_this{
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+.modal_review_inputs small{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.modal_review_inputs p{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.modal_review_inputs .back__confirm .back{
+    padding-block: 12px;
+    padding-inline: 32px;
+    color: var(--customRed);
+    background-color: white;
+    margin-right: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid var(--customRed);
+}
+.modal_review_inputs .back__confirm .confirm{
+    padding-block: 12px;
+    padding-inline: 32px;
+    color: white;
+    background-color: var(--customRed);
+    margin-right: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+}
