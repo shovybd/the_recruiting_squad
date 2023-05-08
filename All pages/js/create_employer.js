@@ -6,6 +6,7 @@ document?.addEventListener('DOMContentLoaded', () => {
     dropdownItems.forEach(item => {
         item.addEventListener('click', () => {
             dropdownButton.textContent = item.textContent;
+            console.log(dropdownButton.textContent);
         });
     });
   });

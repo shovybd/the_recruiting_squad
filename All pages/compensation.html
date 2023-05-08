@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-AuSA7+P/bYJwR8V1a6gz1/GMj+U6FJ2q/UzU+x0yI85oalGzMfRwV8W1Od6Kn1V7ZlO6Cv9qU3s/KQ2mlIgH4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Recruiting Squad</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="d-flex position-relative justify-content-between align-items-center w-100 bg-white ps-lg-5 pt-3 pb-3">
+        <img class="logo" src="./resources/logo.jpeg" alt="logo">
+        <div class="nav__options d-none d-lg-flex justify-content-between align-items-center">
+            <a href="#" class="fs-6 mx-3 my-0 text-decoration-none">Need Help?</a>
+            <a href="#" class="fs-6 mx-3 my-0 text-decoration-none">Chat</a>
+            <a href="#"><img class="message__icon mx-3" src="./resources/message_icon.svg" alt="messsage_icon"></a>
+
+            <!-- user container -->
+            <a href="#">
+                <div class="user-container">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="User Image">
+                    <span class="activity-signal"></span>
+                </div>
+            </a>
+        </div>
+        <!-- breadcrumb__menu -->
+        <div class="breadcrumb__menu d-block d-lg-none" id="breadcrumb__menu"></div>
+        <div class="nav__options border p-0 border-dark-subtle d-none flex-column justify-content-between align-items-center d-lg-none bg-white position-absolute mx-1"
+            id="bread__menus">
+            <a href="#" class="option fs-6 mx-3 my-3 text-decoration-none">Need Help?</a>
+            <a href="#" class="option mx-3 my-3 text-decoration-none">Chat</a>
+            <a href="#"><img class="message__icon mx-3 my-3" src="./resources/message_icon.svg" alt="messsage_icon"></a>
+            <a href="#">
+                <div class="user-container mx-auto mb-3">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="User Image">
+                    <span class="activity-signal"></span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="schedule__kickoff__container w-100 d-flex flex-column">
+        <div class="wrapper mx-auto mb-3" style="width: 64%;margin-top: 89px;">
+            <p class="location_link"><span class="me-2">Dashboard</span><span class="me-2">→</span><span>post a new
+                    job</span></p>
+            <h1 class="kickoff__header">Compensation</h1>
+            <div class="progress_bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+            <div class="compensation_container">
+                <h1>What is the salary range for this position?</h1>
+                <div class="compensation_selector_container">
+                    <section class="range-slider container">
+                        <span class="output outputOne"></span>
+                        <span class="output outputTwo"></span>
+                        <span class="full-range"></span>
+                        <span class="incl-range"></span>
+                        <div class="whole_range_container">
+                            <input name="rangeOne" value="0" min="0" max="999999" step="1" type="range"
+                                id="from_slider_comp">
+                            <input name="rangeTwo" value="999999" min="0" max="999999" step="1" type="range"
+                                id="to_slider_comp">
+                            <p class="initial">$ 0</p>
+                            <p class="max">$ xxx,xxx.xx</p>
+                        </div>
+                    </section>
+                </div>
+
+
+                <div class="compensation_input_container d-flex">
+                    <input type="text" name="" id="from_compensation_new" placeholder="$ 0">
+                    <h6>to</h6>
+                    <input type="text" name="" id="to_compensation_new" placeholder="$ 999999">
+                    <input type="text" name="" id="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1880e2064a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/compensation/compensation.js"></script>
+    <script>
+        
+
+      </script>
+      
+</body>
+
+</html>

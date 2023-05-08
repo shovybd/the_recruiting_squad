@@ -14,6 +14,8 @@ body {
 .nav__options {
     color: var(--customRed);
     padding-right: 80px;
+    top: 70px;
+    right: 0;
 }
 
 .message__icon {
@@ -74,11 +76,13 @@ body {
     translate: 0px -8px;
 }
 
-.nav__options {
+.nav__options a {
     color: var(--customRed);
+    font-weight: bold;
     right: 0;
     top: 84px;
 }
+
 
 .nav__options .option {
     color: var(--customRed);
@@ -434,33 +438,39 @@ thead {
     border-radius: 8px;
     border: solid 1px #a1a1a1;
 }
-.reset_pass_container h1{
+
+.reset_pass_container h1 {
     font-size: 34px;
     font-weight: bold;
 }
-.reset_pass_container .for_account{
+
+.reset_pass_container .for_account {
     text-align: center;
     font-size: 20px;
     color: #a1a1a1;
     margin-bottom: 24px;
 }
-.reset_pass_container form label{
+
+.reset_pass_container form label {
     margin-bottom: 8px;
     font-size: 16px;
     color: #1a1a1a;
     font-weight: bold;
 }
-.at_least_condition_1{
+
+.at_least_condition_1 {
     padding-block: 6px;
     margin-block: 8px;
     text-align: center;
 }
-.at_least_condition_2{
+
+.at_least_condition_2 {
     padding-block: 6px;
     margin-block: 0px;
     margin-bottom: 24px;
     text-align: center;
 }
+
 /* password input eye */
 .password-input {
     position: relative;
@@ -482,9 +492,11 @@ thead {
     height: 32px;
     line-height: 32px;
 }
-.password-input input:focus{
+
+.password-input input:focus {
     outline: none;
 }
+
 .password-icon {
     position: absolute;
     top: 50%;
@@ -502,7 +514,8 @@ thead {
 .password-input input[type="password"]:not(:placeholder-shown)+.password-icon i {
     color: #333;
 }
-.reset_pass_container button{
+
+.reset_pass_container button {
     font-size: 16px;
     font-weight: 600;
     background: var(--customRed);
@@ -513,15 +526,17 @@ thead {
     border-radius: 4px;
     max-width: 100%;
 }
+
 @media only screen and (max-width: 900px) {
-    .reset_pass_container form{
+    .reset_pass_container form {
         max-width: 90vw;
         margin: 0 auto;
 
     }
 }
+
 @media only screen and (min-width: 1000px) {
-    .reset_pass_container form{
+    .reset_pass_container form {
         width: 35%;
         margin-top: 119px;
     }
@@ -531,41 +546,47 @@ thead {
 
 
 /* signup */
-.password_conditions{
+.password_conditions {
     margin-bottom: 64px;
     color: gray;
 }
 
 /* create employer */
-.create_employer_container{
+.create_employer_container {
     padding-inline: 290px;
     width: 100vw;
     padding-bottom: 100px;
 }
-.create_employer_container h1{
+
+.create_employer_container h1 {
     width: 100%;
     margin-top: 125px;
     margin-bottom: 16px;
     font-weight: bold;
 }
-.create_employer_container form{
+
+.create_employer_container form {
     width: 100%;
 }
-.create_employer_container .form__container{
+
+.create_employer_container .form__container {
     max-width: 420px;
 }
-.create_employer_container small{
+
+.create_employer_container small {
     line-height: 1.33;
     letter-spacing: 0.4px;
 }
-.create_employer_container form label{
+
+.create_employer_container form label {
     font-size: 20px;
     font-weight: bold;
     text-align: left;
     width: 100%;
     margin-bottom: 8px;
 }
-.create_employer_container form input{
+
+.create_employer_container form input {
     width: 100%;
     text-align: left;
     padding-inline: 16px;
@@ -574,36 +595,43 @@ thead {
     border: solid 1px #c7c7c7;
     margin-bottom: 16px;
 }
-.create_employer_container form input[type="checkbox"]{
+
+.create_employer_container form input[type="checkbox"] {
     width: max-content;
     margin-right: 10px;
     text-align: left;
 }
-.create_employer_container .filter__button__employer{
+
+.create_employer_container .filter__button__employer {
     width: 140px;
 }
-.create_employer_container .dropdown{
+
+.create_employer_container .dropdown {
     width: 100%;
     margin-bottom: 16px;
 }
-.create_employer_container .skip__save{
+
+.create_employer_container .skip__save {
     width: 100%;
     text-align: right;
     margin-top: 125px;
 }
-.create_employer_hr{
+
+.create_employer_hr {
     margin-bottom: 40px;
     color: black;
     width: 100%;
     height: 1px;
     background-color: #e4e4e4;
 }
-.create_employer_container .button{
+
+.create_employer_container .button {
     width: 100%;
     text-align: right;
     margin-top: 125px;
 }
-.create_employer_container .skip__save button{
+
+.create_employer_container .skip__save button {
     border: solid 1px #656565;
     font-weight: 600;
     background-color: white;
@@ -611,49 +639,59 @@ thead {
     border-radius: 4px;
     padding-inline: 24px;
 }
-.create_employer_container .skip__save button:disabled{
+
+.create_employer_container .skip__save button:disabled {
     border: none;
     background-color: #e4e4e4;
 }
-.create_employer_container form small{
+
+.create_employer_container form small {
     font-size: 12px;
 }
+
 .modal-backdrop {
-    background-color: rgba(0,0,0,0.7);
-  }
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 @media only screen and (max-width: 900px) {
-    .create_employer_container{
+    .create_employer_container {
         padding-inline: 20px;
     }
-    .create_employer_container .skip__save button{
+
+    .create_employer_container .skip__save button {
         width: 100%;
     }
 }
 
 
 /* employer modal */
-.modal_review_inputs{
+.modal_review_inputs {
     padding: 32px;
 }
-.modal_review_inputs h1{
+
+.modal_review_inputs h1 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 8px;
 }
-.modal_review_inputs .you_can_edit_this{
+
+.modal_review_inputs .you_can_edit_this {
     font-size: 20px;
     margin-bottom: 32px;
 }
-.modal_review_inputs small{
+
+.modal_review_inputs small {
     font-size: 12px;
     margin-bottom: 8px;
 }
-.modal_review_inputs p{
+
+.modal_review_inputs p {
     color: black;
     font-size: 16px;
     margin-bottom: 24px;
 }
-.modal_review_inputs .back__confirm .back{
+
+.modal_review_inputs .back__confirm .back {
     padding-block: 12px;
     padding-inline: 32px;
     color: var(--customRed);
@@ -663,7 +701,8 @@ thead {
     border-radius: 4px;
     border: 1px solid var(--customRed);
 }
-.modal_review_inputs .back__confirm .confirm{
+
+.modal_review_inputs .back__confirm .confirm {
     padding-block: 12px;
     padding-inline: 32px;
     color: white;
@@ -672,4 +711,458 @@ thead {
     font-weight: bold;
     border-radius: 4px;
     border: none;
+}
+
+
+
+
+
+/* schedule kickoff meeting page  */
+
+.location_link> :nth-child(1) {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+}
+
+.location_link {
+    color: #656565;
+}
+
+.schedule__kickoff__container .wrapper .kickoff__header {
+    font-size: 40px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+.schedule__kickoff__container .wrapper .progress_bar {
+    height: 8px;
+    width: 100%;
+    background-color: #e4e4e4;
+    margin-bottom: 67px;
+
+}
+
+.schedule__kickoff__container .wrapper .progress_bar .progress {
+    height: 8px;
+    background-color: #656565;
+    border-radius: 0;
+}
+
+.schedule__kickoff__container .wrapper .jobs_in_q .user_experience_design {
+    max-width: max-content;
+    padding-block: 12px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5000px;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 26, 0.2);
+    background-color: #fff;
+    border: none;
+    margin-bottom: 24px;
+}
+
+.schedule__kickoff__container .wrapper .jobs_in_q .add_another_job {
+    max-width: max-content;
+    padding-block: 10px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #de1c22;
+    border: none;
+    margin-bottom: 218px;
+}
+
+.schedule__kickoff__container .wrapper .calendly_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.schedule__kickoff__container .wrapper .using_calendly {
+    max-width: max-content;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c5de5;
+    padding: 12px 32px;
+    border-radius: 4px;
+    border: solid 1px #2c5de5;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.schedule__kickoff__container .wrapper .using_calendly span {
+    margin-right: 4px;
+}
+
+
+/* post a new job */
+
+
+
+.provide_basic_info_container .first_basic_info {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #a1a1a1;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.provide_basic_info_container .heading {
+    color: #1a1a1a;
+}
+
+.provide_basic_info_container label {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.provide_basic_info_container input {
+    width: 448px;
+    height: 32px;
+    /* adjust height as needed */
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #656565;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+}
+
+.provide_basic_info_container .select-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 160px;
+}
+
+.provide_basic_info_container .select-wrapper .select {
+    display: block;
+    width: 448px;
+    /* adjust width as needed */
+    height: 32px;
+    /* adjust height as needed */
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #656565;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.provide_basic_info_container .select-wrapper .select-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #212529;
+}
+
+.post_a_new_job_button button {
+    max-width: max-content;
+    padding-block: 10px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-inline: 12px;
+    font-weight: 600;
+    align-items: center;
+    gap: 10px;
+    height: max-content;
+    border-radius: 4px;
+    color: #de1c22;
+    background-color: #fff;
+    border: solid 1px #de1c22;
+    margin-bottom: 218px;
+    margin-block: 8px;
+}
+
+.post_a_new_job_button .save {
+    color: white;
+    background-color: #de1c22;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .provide_basic_info_container input,
+    .provide_basic_info_container .select-wrapper .select {
+        width: 80vw;
+    }
+
+    .post_a_new_job_button {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* compensation page */
+.compensation_container{
+    display: flex;
+    flex-direction: column;
+}
+.compensation_container h1{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-top: 63px;
+}
+
+
+/* range selector */
+.compensation_selector_container {
+    margin-top: 100px;
+    position: relative;
+}
+
+.compensation_selector_container .whole_range_container {
+    position: relative;
+    height: 60px;
+}
+
+.compensation_selector_container .whole_range_container .initial {
+    position: absolute;
+    top: 38px;
+    left: -5px;
+}
+
+.compensation_selector_container .whole_range_container .max {
+    position: absolute;
+    top: 35px;
+    right: -31px;
+}
+
+.compensation_selector_container .range-slider {
+    position: relative;
+    width: 496px;
+    height: 35px;
+    text-align: center;
+}
+
+.compensation_selector_container .range-slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 15px;
+    width: 496px;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.compensation_selector_container .range-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.compensation_selector_container .range-slider input::range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+}
+
+.compensation_selector_container .range-slider input::range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+}
+
+.compensation_selector_container .range-slider input:last-of-type::range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+
+.compensation_selector_container .range-slider input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+.compensation_selector_container .rangeValue {
+    width: 30px;
+}
+
+.compensation_selector_container .output {
+    position: absolute;
+    border: 1px solid #999;
+    width: max-content;
+    padding: 8px;
+    height: max-content;
+    text-align: center;
+    color: #999;
+    border-radius: 4px;
+    display: inline-block;
+    font: bold 15px/30px Helvetica, Arial;
+    background-color: white;
+    bottom: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.compensation_selector_container .output.outputTwo {
+    left: 100%;
+}
+
+.compensation_selector_container .container {
+    position: relative;
+    padding: 0;
+}
+
+.compensation_selector_container input[type=range] {
+    -webkit-appearance: none;
+    background: none;
+}
+
+.compensation_selector_container input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.compensation_selector_container input[type=range]::-ms-track {
+    height: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.compensation_selector_container input[type=range]::-moz-range-track {
+    height: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.compensation_selector_container input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #555;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+.compensation_selector_container input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #555;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+.compensation_selector_container input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 4px solid #f1f1f1;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #de1c22;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+.compensation_selector_container input[type=range]:focus {
+    outline: none;
+}
+
+.compensation_selector_container .full-range,
+.compensation_selector_container .incl-range {
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 21px;
+    position: absolute;
+    background: #DDD;
+}
+
+.compensation_selector_container .incl-range {
+    background: #de1c22;
+}
+
+@media only screen and (max-width: 900px) {
+    .compensation_selector_container .range-slider {
+        width: 80vw;
+    }
+
+    .compensation_selector_container .range-slider input {
+        width: 80vw;
+    }
+}
+
+/* range selector */
+
+
+.compensation_input_container{
+    margin-top: 64px;
+    justify-content: center;
+}
+.compensation_input_container input{
+    max-width: 201px;
 }
