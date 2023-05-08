@@ -9,3 +9,5 @@
 * login page added at ./All pages/login.html 
 * reset_pass page added at ./All pages/reset_pass.html 
 * sign_up page added at ./All pages/sign_up.html 
+* Provide Basic info page done
+* Compensation page 60% done (created slider and functionalities)
