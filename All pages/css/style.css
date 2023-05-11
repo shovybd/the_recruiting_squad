@@ -1173,7 +1173,7 @@ thead {
     padding-block: 10px;
 }
 
-.compensation_input_container .custom-select{
+.compensation_input_container .custom-select {
     position: relative;
     width: max-content;
 }
@@ -1223,4 +1223,256 @@ thead {
     border-right: 6px solid transparent;
     border-top: 6px solid black;
     margin-top: 26px;
+}
+
+/* job description create page */
+
+.job_description_create_container {
+    width: 684px;
+    margin-inline: auto;
+}
+
+.job_description_create_container h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.job_description_create_container p {
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+.job_description_create_container textarea {
+    height: 88px;
+    overflow-y: scroll;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.job_description_create_container button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #de1c22;
+    padding: 12px 32px;
+    border-radius: 4px;
+    border: solid 1px #de1c22;
+    background-color: #fff;
+    width: 320px;
+    margin-bottom: 81px;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .job_description_create_container {
+        max-width: 90vw;
+    }
+
+    .wrapper {
+        margin-inline: 0;
+    }
+}
+
+
+/* Include details page */
+.include_details_container {
+    width: 740px;
+    margin-inline: auto;
+}
+@media only screen and (max-width: 900px) {
+    .include_details_container {
+        max-width: 90vw;
+    }
+}
+.include_details_container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+/* bubble selector */
+.include_details_container .category-toggle {
+    display: flex;
+    align-items: flex-end;
+    width: max-content;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    background-color: #e4e4e4;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.include_details_container .category-toggle.checked {
+    background-color: #656565 !important;
+    color: #fff;
+}
+
+.include_details_container .category-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:checked+.tick-sign {
+    display: inline-block;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:not(:checked)+.plus-sign {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.include_details_container .plus-sign,
+.include_details_container .tick-sign {
+    display: none;
+    margin-left: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:checked~.plus-sign {
+    display: none;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:not(:checked)~.tick-sign {
+    display: none;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:checked~.tick-sign {
+    display: inline-block;
+    color: #fff;
+}
+
+.include_details_container .category-toggle:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.experience .custom-select {
+    position: relative;
+    width: max-content;
+}
+
+.experience .custom-select input {
+    font-size: 14px;
+    padding: 10px 16px;
+    padding-right: 32px;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.experience .custom-select .custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 16px;
+    width: 16px;
+    height: 100%;
+    width: 24px;
+
+}
+
+.experience .custom-select .custom-arrow #up_exp,
+.experience .custom-select .custom-arrow #down_exp {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.experience .custom-select .custom-arrow #up_exp {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
+    margin-top: 8px;
+}
+
+.experience .custom-select .custom-arrow #down_exp {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    margin-top: 30px;
+}
+
+
+/* hires */
+.how_many_hires .custom-select {
+    position: relative;
+    width: max-content;
+}
+
+.how_many_hires .custom-select input {
+    font-size: 14px;
+    padding: 10px 16px;
+    padding-right: 32px;
+    /* pointer-events: none; */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.how_many_hires .custom-select .custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 16px;
+    width: 16px;
+    height: 100%;
+    width: 24px;
+
+}
+
+.how_many_hires .custom-select .custom-arrow #up_hire,
+.how_many_hires .custom-select .custom-arrow #down_hire {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.how_many_hires .custom-select .custom-arrow #up_hire {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
+    margin-top: 8px;
+}
+
+.how_many_hires .custom-select .custom-arrow #down_hire {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    margin-top: 30px;
+}
+
+
+.include_details_container .show_more{
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: left;
+    color: #1a1a1a;
+    padding: 10px 16px;
+    border-radius: 5000px;
+    width: max-content;
+    height: max-content;
+    border: solid 1px #1a1a1a;
+    background-color: #fff;
 }

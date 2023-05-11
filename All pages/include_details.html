@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-AuSA7+P/bYJwR8V1a6gz1/GMj+U6FJ2q/UzU+x0yI85oalGzMfRwV8W1Od6Kn1V7ZlO6Cv9qU3s/KQ2mlIgH4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Recruiting Squad</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="d-flex position-relative justify-content-between align-items-center w-100 bg-white ps-lg-5 pt-3 pb-3">
+        <img class="logo" src="./resources/logo.jpeg" alt="logo">
+        <div class="nav__options d-none d-lg-flex justify-content-between align-items-center">
+            <a href="#" class="fs-6 mx-3 my-0 text-decoration-none">Need Help?</a>
+            <a href="#" class="fs-6 mx-3 my-0 text-decoration-none">Chat</a>
+            <a href="#"><img class="message__icon mx-3" src="./resources/message_icon.svg" alt="messsage_icon"></a>
+
+            <!-- user container -->
+            <a href="#">
+                <div class="user-container">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="User Image">
+                    <span class="activity-signal"></span>
+                </div>
+            </a>
+        </div>
+        <!-- breadcrumb__menu -->
+        <div class="breadcrumb__menu d-block d-lg-none" id="breadcrumb__menu"></div>
+        <div class="nav__options border p-0 border-dark-subtle d-none flex-column justify-content-between align-items-center d-lg-none bg-white position-absolute mx-1"
+            id="bread__menus">
+            <a href="#" class="option fs-6 mx-3 my-3 text-decoration-none">Need Help?</a>
+            <a href="#" class="option mx-3 my-3 text-decoration-none">Chat</a>
+            <a href="#"><img class="message__icon mx-3 my-3" src="./resources/message_icon.svg" alt="messsage_icon"></a>
+            <a href="#">
+                <div class="user-container mx-auto mb-3">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="User Image">
+                    <span class="activity-signal"></span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="schedule__kickoff__container w-100 d-flex flex-column">
+        <div class="wrapper mx-4 mx-lg-auto mb-3" style="width: 64%;margin-top: 89px;">
+            <p class="location_link"><span class="me-2">Dashboard</span><span class="me-2">→</span><span>post a new
+                    job</span></p>
+            <h1 class="kickoff__header">Include Details</h1>
+            <div class="progress_bar">
+                <div class="progress" style="width: 40%;"></div>
+            </div>
+            <div class="compensation_container">
+                <div class="include_details_container">
+                    <h3>What type of job is it?</h3>
+                    <div class="type_of_job d-flex flex-wrap mb-4 pb-4">
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Full-time
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Part-time
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Temporary
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Contract
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Internship
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                    </div>
+                    <h3 class="">How many years experience do you require?</h3>
+                    <div class="experience d-flex flex-wrap mb-4 pb-4">
+                        <div class="my-lg-0 my-4 custom-select">
+                            <input type="text" value="3 years" id="experience">
+                            <span class="custom-arrow" id="updown">
+                                <span id="up_exp"></span>
+                                <span id="down_exp"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>What is the schedule for this job?</h3>
+                    <div class="schedule_set d-flex flex-wrap mb-4 pb-4">
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            4 hour shift
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            8 hour shift
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            10 hour shift
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            12 hour shift
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            3x12
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            4x10
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            4x12
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            5x8
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Monday to Friday
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Day Shift
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                    </div>
+                    <h3>How many hires do you want to make for this position?</h3>
+                    <div class="how_many_hires d-flex flex-wrap mb-4 pb-4">
+                        <div class="my-lg-0 my-4 custom-select">
+                            <input type="text" value="0" id="hire">
+                            <span class="custom-arrow" id="updown">
+                                <span id="up_hire"></span>
+                                <span id="down_hire"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>What types of benefits does this job offer?</h3>
+                    <div class="benefits_this_job_offers d-flex flex-wrap mb-4 pb-4">
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Medical
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Dental
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Vision
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Life Insurance
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            401K
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Flexible Hours
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Tuition Reimbursement
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Tuition Paid maternity/paternity leave
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Unlimited PTO
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Company-wide retreats
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <label class="category-toggle bubble_select mx-2 my-2">
+                            <input type="checkbox" />
+                            Free snacks
+                            <span class="plus-sign">+</span>
+                            <span class="tick-sign">&#10003;</span>
+                        </label>
+                        <button class="show_more mx-2 my-2">Show <span>5</span> more</button>
+                    </div>
+                </div>
+
+                <div class="calendly_wrapper post_a_new_job_button d-flex flex-col flex-lg-row mb-5">
+                    <button class="border-opacity-50 border-black text-black">Back</button>
+                    <button class="skip">Skip & Finish later</button>
+                    <button class="save">Save & Next <img class="arrow_white" src="./resources/arrow_right_white.svg"
+                            alt="save and next"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1880e2064a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+
+        const categoryToggles = document.querySelectorAll('.category-toggle');
+
+        categoryToggles.forEach((toggle) => {
+            const checkbox = toggle.querySelector('input[type="checkbox"]');
+
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    toggle.classList.add('checked');
+                } else {
+                    toggle.classList.remove('checked');
+                }
+            });
+        });
+        const options = document.getElementById("experience");
+        const up = document.querySelector("#up_exp");
+        const down = document.querySelector("#down_exp");
+        const valuesExperience = ["None", "1 year", "3 years", "5 years", "10 years", "15 years", "20 years"]
+
+        up.addEventListener("click", () => {
+            let index = valuesExperience.indexOf(options.value);
+            if (index > 0) {
+                options.value = valuesExperience[index - 1];
+            }
+        })
+        down.addEventListener("click", () => {
+            let index = valuesExperience.indexOf(options.value);
+            if (index < valuesExperience.length - 1) {
+                options.value = valuesExperience[index + 1];
+            }
+        })
+        const optionsHire = document.getElementById("hire");
+        const upHire = document.querySelector("#up_hire");
+        const downHire = document.querySelector("#down_hire");
+
+        upHire.addEventListener("click", () => {
+            if (parseInt(optionsHire.value) > 0) {
+                optionsHire.value = optionsHire.value - 1;
+            }
+        })
+        downHire.addEventListener("click", () => {
+                optionsHire.value = parseInt(optionsHire.value) + 1;
+        })
+
+    </script>
+
+</body>
+
+</html>
