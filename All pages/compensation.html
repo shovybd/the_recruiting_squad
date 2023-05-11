@@ -68,7 +68,7 @@
             </div>
             <div class="compensation_container">
                 <h1>What is the salary range for this position?</h1>
-                <div class="compensation_selector_container">
+                <div class="compensation_selector_container mx-2">
                     <section class="range-slider container">
                         <span class="output outputOne"></span>
                         <span class="output outputTwo"></span>
@@ -86,13 +86,25 @@
                 </div>
 
 
-                <div class="compensation_input_container d-flex">
-                    <input type="text" name="" id="from_compensation_new" placeholder="$ 0">
-                    <h6>to</h6>
-                    <input type="text" name="" id="to_compensation_new" placeholder="$ 999999">
-                    <input type="text" name="" id="">
-                </div>
+                <div class="compensation_input_container d-flex flex-column flex-md-row align-items-center">
+                    <input type="text" name="" id="from_compensation_new" placeholder="$ 0" default="0" class="me-md-2">
+                    <h6 class="me-md-2">to</h6>
+                    <input class="me-md-2" type="text" name="" id="to_compensation_new" placeholder="$ 999999" default="999999">
 
+                    <!-- change the array value in upDown_select.js to change options -->
+                    <div class="my-lg-0 my-4 custom-select">
+                        <input type="text" value="per year" id="range">
+                        <span class="custom-arrow" id="updown">
+                            <span id="up"></span>
+                            <span id="down"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendly_wrapper post_a_new_job_button d-flex flex-col flex-lg-row mb-5">
+                    <button class="border-opacity-50 border-black text-black">Back</button>
+                    <button class="skip">Skip & Finish later</button>
+                    <button class="save">Save & Next <img class="arrow_white" src="./resources/arrow_right_white.svg" alt="save and next"></button>
+                </div>
             </div>
 
         </div>
@@ -103,11 +115,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/compensation/compensation.js"></script>
+    <script src="./js/compensation/upDown_select.js"></script>
     <script>
-        
 
-      </script>
-      
+
+    </script>
+
 </body>
 
 </html>

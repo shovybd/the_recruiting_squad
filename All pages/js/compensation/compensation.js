@@ -6,11 +6,11 @@ const rangeOne = document.querySelector('input[name="rangeOne"]');
       
         function updateView() {
           if (this.getAttribute('name') === 'rangeOne') {
-            outputOne.innerHTML = `$ ${this.value}`;
+            outputOne.innerHTML = `$ ${(Number(this.value).toFixed(2)).toLocaleString("en-US")}`;
             outputOne.style.left = `${(this.value / this.getAttribute('max')) * 100}%`;
           } else {
             outputTwo.style.left = `${(this.value / this.getAttribute('max')) * 100}%`;
-            outputTwo.innerHTML = `$ ${this.value}`;
+            outputTwo.innerHTML = `$ ${Number(this.value).toFixed(2).toLocaleString("en-US")}`;
           }
       
           if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
@@ -44,15 +44,18 @@ const rangeOne = document.querySelector('input[name="rangeOne"]');
         const toCompensation = document.getElementById('to_compensation_new');
       
         fromSlider.addEventListener('change', function () {
-          fromCompensation.value = `$ ${this.value}`;
+          fromCompensation.value = `${parseFloat(this.value)}`;
+
         });
       
         toSlider.addEventListener('change', function () {
-          toCompensation.value = `$ ${this.value}`;
+          toCompensation.value = `${parseFloat(this.value)}`;
         });
         fromCompensation.addEventListener('input', function () {
             fromSlider.value = this.value;
+            updateView.call(rangeOne);
         });
         toCompensation.addEventListener('input', function () {
             toSlider.value = this.value;
+            updateView.call(rangeTwo);
         });
