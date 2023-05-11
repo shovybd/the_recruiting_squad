@@ -9,3 +9,6 @@
 * login page added at ./All pages/login.html 
 * reset_pass page added at ./All pages/reset_pass.html 
 * sign_up page added at ./All pages/sign_up.html 
+* compensation page added at ./All pages/compensation.html
+* job_description page added
+* include_details page added 
