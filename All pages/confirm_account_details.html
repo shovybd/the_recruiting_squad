@@ -20,7 +20,7 @@
 </head>
 <body>
 <!-- modal background darken -->
-<div class="d-none position-fixed" id="modal_background_opactiy" style="z-index: 10;left:0; background-color: rgba(0,0,0,0.7); height:100vh; width: 100%;max-width: 100vw;">hey</div>
+<div class="d-block position-fixed" id="modal_background_opactiy" style="z-index: 10;  left: 0;background-color: rgba(0,0,0,0.7); height:100vh; width: 100%;max-width: 100vw;"></div>
 
 <!-- nav bar -->
 <nav class="d-flex position-relative justify-content-between align-items-center w-100 bg-white ps-lg-5 pt-3 pb-3">
@@ -98,7 +98,7 @@
         </form>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade show d-block" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
@@ -125,6 +125,7 @@
 
 
 </section>
+
 
     <script src="https://kit.fontawesome.com/1880e2064a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>

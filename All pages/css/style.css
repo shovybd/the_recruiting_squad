@@ -1283,11 +1283,13 @@ thead {
     width: 740px;
     margin-inline: auto;
 }
+
 @media only screen and (max-width: 900px) {
     .include_details_container {
         max-width: 90vw;
     }
 }
+
 .include_details_container h3 {
     font-size: 20px;
     font-weight: bold;
@@ -1464,7 +1466,7 @@ thead {
 }
 
 
-.include_details_container .show_more{
+.include_details_container .show_more {
     font-size: 14px;
     line-height: 1.43;
     text-align: left;
@@ -1475,4 +1477,174 @@ thead {
     height: max-content;
     border: solid 1px #1a1a1a;
     background-color: #fff;
+}
+
+/* view resume page */
+.resume_page_container {
+    margin-inline: 70px;
+}
+@media only screen and (max-width: 900px) {
+    .resume_page_container{
+        margin-inline: 4px;
+    }
+}
+
+.view_next_resume h1 {
+    font-weight: bold;
+    line-height: 1.5;
+    color: #de1c22;
+}
+
+.view_next_resume img {
+    width: 18px;
+    margin-left: 8px;
+}
+
+.resume_page_content_container {}
+
+.resume_info_container {
+    margin-inline: 0;
+}
+
+.resume_info_container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 0;
+    color: #000;
+}
+
+.resume_info_container h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.resume_info_container p {
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+.resume_info_container .user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.resume_info_container h4 {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.resume_info_container small {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #a1a1a1;
+}
+
+.resume_info_container hr {
+    height: 2px;
+    width: 98%;
+    margin-inline: auto;
+    color: #e4e4e4;
+}
+
+.resume_info_container h5 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin-bottom: 28px;
+}
+
+.view_resume_feedback_container div {
+    padding: 16px 11px;
+    border-radius: 4px;;
+    min-width: 90px;
+    max-height: 100px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view_resume_feedback_container .div_1 {
+    background-color: #d6f3e2;
+    margin-right: 20px;
+}
+.view_resume_feedback_container .div_2 {
+    background-color: #e4e4e4;
+    margin-right: 20px;
+}
+.view_resume_feedback_container .div_3 {
+    background-color: #f9d3d4;
+}
+
+
+.view_resume_feedback_container img {
+    margin-bottom: 8px;
+}
+
+.view_resume_feedback_container h6 {
+    font-size: 14px;
+    color: #000;
+}
+.resume_info_container form input{
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #656565;
+}
+.resume_info_container form textarea{
+    height: 100px;
+    padding: 10px 16px 70px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 14px;
+}
+.resume_info_container form button
+,.share_resume_modal button{
+    height: max-content;
+    width: max-content;
+    padding: 10px 24px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #de1c22;
+
+}
+.resume_info_container form button:disabled
+,.share_resume_modal button:disabled{
+    background-color: #e4e4e4;
+    color: #a1a1a1;
+}
+.resume_page_content_container .row .print_pdf_viewer{
+    background-color: #f1f1f1;
+}
+.share_resume_modal input{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    background-color: #fff;
+    height: 48px;
+}
+.share_resume_modal button{
+    height: 48px;
 }
