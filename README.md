@@ -12,3 +12,8 @@
 * compensation page added at ./All pages/compensation.html
 * job_description page added
 * include_details page added 
+* Basic_info.html
+* confirm_account_details.html
+* schedule_kickoff_meeting.html
+* share_resume.html
+* view_resume.html
