@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-AuSA7+P/bYJwR8V1a6gz1/GMj+U6FJ2q/UzU+x0yI85oalGzMfRwV8W1Od6Kn1V7ZlO6Cv9qU3s/KQ2mlIgH4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Recruiting Squad</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="d-flex position-relative justify-content-between align-items-center w-100 bg-white ps-lg-5 pt-3 pb-3">
+        <img class="logo" src="./resources/logo.jpeg" alt="logo">
+        <div class="nav__options d-none d-lg-flex justify-content-between align-items-center">
+            <a href="#" class="fs-6 mx-3 my-0 text-decoration-none">Need Help?</a>
+            <a href="#" class="fs-6 mx-3 my-0 text-decoration-none">Chat</a>
+            <a href="#" class="bg-danger py-2 rounded-1"><img class="message__icon mx-3" src="./resources/messages_white.svg"
+                    alt="messsage_icon"></a>
+
+            <!-- user container -->
+            <a href="#">
+                <div class="user-container">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="User Image">
+                    <span class="activity-signal"></span>
+                </div>
+            </a>
+        </div>
+        <!-- breadcrumb__menu -->
+        <div class="breadcrumb__menu d-block d-lg-none" id="breadcrumb__menu"></div>
+        <div class="nav__options border p-0 border-dark-subtle d-none flex-column justify-content-between align-items-center d-lg-none bg-white position-absolute mx-1"
+            id="bread__menus">
+            <a href="#" class="option fs-6 mx-3 my-3 text-decoration-none">Need Help?</a>
+            <a href="#" class="option mx-3 my-3 text-decoration-none">Chat</a>
+            <a href="#" class="bg-danger py-2 rounded-1 mb-3"><img class="message__icon mx-3" src="./resources/messages_white.svg"
+                alt="messsage_icon"></a>
+            <a href="#">
+                <div class="user-container mx-auto mb-3">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="User Image">
+                    <span class="activity-signal"></span>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <!-- nav bar 2 -->
+    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center w-100 bg-white pt-4 pb-4 mb-3">
+        <a href="#" class="nav_two_focus fs-6 fw-bolder mx-3 my-2 my-lg-0 px-4 py-2 rounded-5 text-decoration-none">Jobs</a>
+        <a href="#" class="fs-6 mx-3 my-2 my-lg-0 text-decoration-none text-black">Candidates</a>
+        <a href="#" class="fs-6 mx-3 my-2 my-lg-0 text-decoration-none text-black">Career Website</a>
+    </div>
+
+
+    <!-- body container candidates -->
+
+    <div class="candidates__container__parent jobs__container__parent container mx-auto w-100">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-9 ps-lg-0 pe-lg-5">
+                <h2 class="page__title fs-1 fw-bold">Jobs</h2>
+                <!-- search option -->
+                <form action="" method="GET"
+                    class="candidates__search d-flex flex-column flex-lg-row justify-content-between mb-5 pb-1">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <input type="text" class="search_job_titles ps-3 me-2 rounded-1"
+                            placeholder="Search job titles...">
+                        <!-- dropdown -->
+                        <div class="dropdown">
+                            <button
+                                class="filter__button d-flex justify-content-between align-items-center btn bg-white rounded-1 h-100 dropdown-toggle"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Filter</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="add_new_job border-0 text-white rounded-1">Add new
+                        job</button>
+                </form>
+
+
+                <!-- table -->
+                <div class="table__container w-100 overflow-x-scroll pb-5">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="thead">
+                                <tr class="border_bottom">
+                                    <th class="pb-3"><input type="checkbox"></th>
+                                    <th class="align-middle pb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="table__font">Job ID</span>
+                                            <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                                        </div>
+                                    </th>
+                                    <th class="align-middle pb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="table__font">Location</span>
+                                            <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                                        </div>
+                                    </th>
+                                    <th class="align-middle pb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="table__font">Job Title</span>
+                                            <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                                        </div>
+                                    </th>
+                                    <th class="align-middle pb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="table__font">Position Type</span>
+                                            <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                                        </div>
+                                    </th>
+                                    <th class="align-middle pb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="table__font">Pool</span>
+                                            <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                                        </div>
+                                    </th>
+                                    <th class="pb-3"><i class="fa-solid fa-ellipsis" style="color: #000000;"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hide_border">
+                                    <td class="border-0"><input type="checkbox"></td>
+                                    <td class="table__font border-0">88973601</td>
+                                    <td class="table__font border-0">New York, NY</td>
+                                    <td class="table__font border-0">UX Designer</td>
+                                    <td class="table__font border-0">FT</td>
+                                    <td class="border-0">
+                                        <p class="awaiting_review pool_open py-2 rounded-5 text-success bg-success-subtle">OPEN</p>
+                                    </td>
+                                    <td class="border-0"><img class="ellipsis__menu" src="./resources/3_dot.svg" alt=""></td>
+                                </tr>
+
+                                <tr class="hide_border">
+                                    <td class="border-0"><input type="checkbox"></td>
+                                    <td class="table__font border-0">77892099</td>
+                                    <td class="table__font border-0">San Francisco, CA</td>
+                                    <td class="table__font border-0">Marketing Director</td>
+                                    <td class="table__font border-0">FT</td>
+                                    <td class="border-0">
+                                        <p class="awaiting_review py-2 rounded-5 text-success bg-success-subtle">OPEN</p>
+                                    </td>
+                                    <td class="border-0"><img class="ellipsis__menu" src="./resources/3_dot.svg" alt=""></td>
+                                </tr>
+                                <tr class="hide_border">
+                                    <td class="border-0"><input type="checkbox"></td>
+                                    <td class="table__font border-0">111892200</td>
+                                    <td class="table__font border-0">Seattle, WA</td>
+                                    <td class="table__font border-0">Software Engineer</td>
+                                    <td class="table__font border-0">FT</td>
+                                    <td class="border-0">
+                                        <p class="awaiting_review py-2 rounded-5 text-success bg-success-subtle">OPEN</p>
+                                    </td>
+                                    <td class="border-0"><img class="ellipsis__menu" src="./resources/3_dot.svg" alt=""></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="billing__container col-md-3 p-3 border rounded-3">
+                <div class="d-flex justify-content-between">
+                    <h1 class="hours__remaining fw-bold">Hours Remaining</h1>
+                    <img class="settings__icon" src="./resources/settings.svg" alt="">
+                </div>
+                <h1 class="hours__left">33 hours left</h1>
+                <div class="progress_bar mt-3 rounded-1">
+                    <div class="progress bg-success rounded-1"></div>
+                </div>
+                <button class="pause__billing bg-white w-100 mt-3">Pause
+                    Billing <img src="./resources/pause.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1880e2064a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
