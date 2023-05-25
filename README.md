@@ -1,22 +1,22 @@
 # THE RECRUITING SQUAD (update)
 *********************************************************************************
-* Banner page added
-* candidates page added
-* create_employer_account page added
-* forget_password page added
-* jobs page added
-* login_after_reset page added
-* login page added
-* reset_pass page added
-* sign_up page added
-* compensation page
-* job_description page added
-* include_details page added 
+* Banner
+* candidates
+* create_employer_account
+* forget_password
+* jobs
+* login_after_reset
+* login_page
+* reset_pass
+* sign_up
+* compensation
+* job_description
+* include_details
 * Basic_info.html
-* confirm_account_details.html
-* schedule_kickoff_meeting.html
-* share_resume.html
-* view_resume.html
+* confirm_account_details
+* schedule_kickoff_meeting
+* share_resume
+* view_resume
 * add_a_note
 * add_a_note_existing
 * messages
