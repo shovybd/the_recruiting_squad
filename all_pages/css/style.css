@@ -1,0 +1,2029 @@
+:root {
+    --customRed: #de1c22;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav__options {
+    color: var(--customRed);
+    padding-right: 80px;
+    top: 70px;
+    right: 0;
+    max-height: 500px;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav__options {
+        overflow-y: scroll;
+    }
+}
+
+.nav_hire_button {
+    background-color: var(--customRed);
+    padding-inline: 32px;
+    padding-block: 12px;
+    width: max-content;
+}
+
+.nav_sign_button {
+    background-color: transparent;
+    padding-inline: 32px;
+    padding-block: 12px;
+    color: var(--customRed);
+    border: 1px solid var(--customRed);
+    width: max-content;
+}
+
+.nav_dropdown_services {
+    gap: 48px;
+    white-space: nowrap;
+    z-index: 10;
+    padding-inline: 40px;
+    padding-block: 24px;
+    border-radius: 8px;
+    box-shadow: 0 12px 32px 0 rgba(26, 26, 26, 0.24);
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav_resources {
+    max-width: 720px;
+}
+
+.nav_resources p {
+    white-space: wrap;
+    font-size: 14px;
+    color: black;
+}
+
+.resources_headers {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.mobile {
+    padding-inline: 8px;
+    padding-block: 8px;
+}
+
+.link_active {
+    color: var(--customRed) !important;
+}
+
+.link_inactive {
+    color: #000000 !important;
+}
+
+.message__icon {
+    width: 20px;
+}
+
+.logo {
+    width: 64px;
+    margin-left: 22px;
+}
+
+.candidates__container__parent {
+    margin-inline: 70px;
+}
+
+.jobs__container__parent {
+    grid-template-columns: 3fr 1fr;
+}
+
+.filter__dropdown {
+    position: relative;
+    padding: 10px;
+    color: #7c7c7c;
+    border: solid 1px #c7c7c7;
+    outline: none;
+    padding: 0 16px;
+    height: 48px;
+    width: 286px;
+}
+
+.breadcrumb__menu {
+    position: relative;
+    width: 24px;
+    height: 4px;
+    background-color: var(--customRed);
+    margin: 0px 8px;
+    margin-right: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.breadcrumb__menu::before,
+.breadcrumb__menu::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: var(--customRed);
+    cursor: pointer;
+}
+
+.breadcrumb__menu::after {
+    translate: 0px 8px;
+}
+
+.breadcrumb__menu::before {
+    translate: 0px -8px;
+}
+
+.nav__options a {
+    color: var(--customRed);
+    font-weight: bold;
+    right: 0;
+    top: 84px;
+}
+
+
+.nav__options .option {
+    color: var(--customRed);
+}
+
+.user-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 32px;
+    height: 32px;
+}
+
+.user-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.activity-signal {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: #008556;
+}
+
+.nav_two_focus {
+    color: var(--customRed);
+    background-color: #f9d3d4;
+}
+
+.page__title {
+    margin-bottom: 32px;
+}
+
+.add_new_job {
+    background-color: var(--customRed);
+    width: 200px;
+    height: 48px;
+}
+
+.search_job_titles {
+    width: 286px;
+    height: 48px;
+    border: solid 1px #c7c7c7;
+    max-width: 300px;
+    outline: none;
+}
+
+.dropdown-toggle::after {
+    font-size: 18px;
+}
+
+.filter__button {
+    border-color: #c7c7c7;
+    width: 300px;
+}
+
+.filter__button span {
+    color: #656565;
+}
+
+thead {
+    border-bottom: 1px solid #000000;
+}
+
+.border_bottom {
+    border-style: solid;
+}
+
+.awaiting_review {
+    padding-inline: 12px;
+    max-width: fit-content;
+    font-size: 12px;
+    background-color: #ffe1be;
+    color: #e86825;
+}
+
+.pool_open {
+    background-color: #d6f3e2;
+    color: #008556;
+}
+
+.table__container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table__font {
+    font-size: 14px;
+}
+
+.ellipsis__menu {
+    height: 18px;
+}
+
+.billing__container {
+    margin-top: 80px;
+    border-color: #e4e4e4;
+    height: max-content;
+}
+
+.billing__container .hours__remaining {
+    font-size: 20px;
+}
+
+.billing__container .settings__icon {
+    height: 20px;
+    width: 20px;
+}
+
+.billing__container .hours__left {
+    font-size: 12px;
+    margin-top: 19px;
+}
+
+.billing__container .progress_bar {
+    height: 37px;
+    width: 100%;
+    background-color: #e4e4e4;
+}
+
+.billing__container .progress_bar .progress {
+    height: 37px;
+    width: 80%;
+}
+
+.billing__container .pause__billing {
+    border: 2px solid var(--customRed);
+    border-radius: 8px;
+    padding-block: 12px;
+    color: var(--customRed);
+}
+
+.billing__container .pause__billing img {
+    width: 25px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .candidates__container__parent {
+        margin-inline: 6px;
+    }
+
+    .candidates__search input,
+    select,
+    button {
+        width: 100vw;
+        margin: 4px;
+        padding: 0;
+    }
+}
+
+
+
+/* login page specific css */
+.login__nav {
+    margin-left: 40px;
+    margin-right: 82px;
+}
+
+.login__nav img {
+    width: 48px;
+    height: 38px;
+}
+
+.login__nav div button {
+    padding: 10px;
+    background-color: var(--customRed);
+    font-size: 14px;
+    font-weight: 600;
+    width: max-content;
+}
+
+.login__nav div a {
+    margin-inline: 50px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.login__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login__container .cover {
+    width: 100%;
+}
+
+.login__container .form_container .form__content {
+    max-width: 448px;
+    margin: 0 auto;
+}
+
+.login__container .form_container .form__content form input,
+.login__container .form_container .form__content form button {
+    width: 100%;
+}
+
+.login__container .form_container .form__content h1 {
+    font-size: 40px;
+}
+
+.login__container .form_container .form__content p {
+    font-size: 18px;
+    color: #c7c7c7;
+    margin-bottom: 48px;
+}
+
+.login__container .form_container .form__content form label {
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.login__container .form_container .form__content form input[type="checkbox"] {
+    max-width: fit-content;
+}
+
+.login__container .form_container .form__content form input[type="email"],
+.login__container .form_container .form__content form input[type="password"] {
+    border: solid 1px #c7c7c7;
+}
+
+.login__container .form_container .form__content form input,
+.login__container .form_container .form__content form button,
+.login__container .form_container .form__content button {
+    font-size: 16px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login__container .form_container .form__content button {
+    width: 100%;
+    border: solid 1px #656565;
+    font-weight: 600;
+}
+
+.login__container .form_container .form__content form .remember__forgot {
+    margin-bottom: 16px;
+}
+
+.login__container .form_container .form__content form .forgot {
+    color: var(--customRed);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login__container .form_container .form__content form .sign__in__red {
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--customRed);
+}
+
+.login__container .form_container .form__content .no__account {
+    font-size: 14px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.login__container .form_container .form__content .no__account a {
+    color: var(--customRed);
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+/* forgot password reset */
+.forgot_pass_container {
+    padding: 40px;
+    border: solid 1px #a1a1a1;
+    height: max-content;
+    border-radius: 8px;
+    max-width: 448px;
+    margin: 0 auto;
+    margin-top: 277px;
+}
+
+.forgot_pass_container h1 {
+    font-size: 30px;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+
+.forgot_pass_container button {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--customRed);
+    border: none;
+    border-radius: 4px;
+    padding-block: 12px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.forgot_pass_container small {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin-bottom: 24px;
+}
+
+.forgot_pass_container h6 {
+    color: var(--customRed);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+    .login__nav {
+        margin-right: 40px;
+    }
+
+    .login__nav div a {
+        margin-inline: 8px;
+    }
+
+    .login__container .cover {
+        display: none;
+    }
+
+    .login__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .login__container .form_container .form__content,
+    .forgot_pass_container {
+        max-width: 90vw;
+    }
+}
+
+
+/* reset password page */
+.reset_pass_container {
+    /* height: 100vh; */
+    padding-bottom: 200px;
+}
+
+.reset_pass_container form {
+    padding: 40px 40px 96px;
+    border-radius: 8px;
+    border: solid 1px #a1a1a1;
+}
+
+.reset_pass_container h1 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.reset_pass_container .for_account {
+    text-align: center;
+    font-size: 20px;
+    color: #a1a1a1;
+    margin-bottom: 24px;
+}
+
+.reset_pass_container form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.at_least_condition_1 {
+    padding-block: 6px;
+    margin-block: 8px;
+    text-align: center;
+}
+
+.at_least_condition_2 {
+    padding-block: 6px;
+    margin-block: 0px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* password input eye */
+.password-input {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    padding-inline: 16px;
+    padding-block: 12px;
+    border: solid 1px #c7c7c7;
+    border-radius: 4px;
+}
+
+.password-input input {
+    padding-right: 40px;
+    /* To make room for the eye icon */
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+}
+
+.password-input input:focus {
+    outline: none;
+}
+
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Style the eye icon to show/hide the password */
+.password-icon img {
+    width: 16px;
+}
+
+/* Style the eye icon when the password is visible */
+.password-input input[type="password"]:not(:placeholder-shown)+.password-icon i {
+    color: #333;
+}
+
+.reset_pass_container button {
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--customRed);
+    border: none;
+    margin-top: 16px;
+    color: white;
+    padding-block: 12px;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .reset_pass_container form {
+        max-width: 90vw;
+        margin: 0 auto;
+
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .reset_pass_container form {
+        width: 35%;
+        margin-top: 119px;
+    }
+}
+
+
+
+
+/* signup */
+.password_conditions {
+    margin-bottom: 64px;
+    color: gray;
+}
+
+/* create employer */
+.create_employer_container {
+    padding-inline: 290px;
+    width: 100vw;
+    padding-bottom: 100px;
+}
+
+.create_employer_container h1 {
+    width: 100%;
+    margin-top: 125px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.create_employer_container form {
+    width: 100%;
+}
+
+.create_employer_container .form__container {
+    max-width: 420px;
+}
+
+.create_employer_container small {
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+}
+
+.create_employer_container form label {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.create_employer_container form input {
+    width: 100%;
+    text-align: left;
+    padding-inline: 16px;
+    padding-block: 12px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    margin-bottom: 16px;
+}
+
+.create_employer_container form input[type="checkbox"] {
+    width: max-content;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.create_employer_container .filter__button__employer {
+    width: 140px;
+}
+
+.create_employer_container .dropdown {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.create_employer_container .skip__save {
+    width: 100%;
+    text-align: right;
+    margin-top: 125px;
+}
+
+.create_employer_hr {
+    margin-bottom: 40px;
+    color: black;
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4;
+}
+
+.create_employer_container .button {
+    width: 100%;
+    text-align: right;
+    margin-top: 125px;
+}
+
+.create_employer_container .skip__save button {
+    border: solid 1px #656565;
+    font-weight: 600;
+    background-color: white;
+    padding-block: 10px;
+    border-radius: 4px;
+    padding-inline: 24px;
+}
+
+.create_employer_container .skip__save button:disabled {
+    border: none;
+    background-color: #e4e4e4;
+}
+
+.create_employer_container form small {
+    font-size: 12px;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal_backdrop_overlay {
+    z-index: 10;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .create_employer_container {
+        padding-inline: 20px;
+    }
+
+    .create_employer_container .skip__save button {
+        width: 100%;
+    }
+}
+
+
+/* employer modal */
+.modal_review_inputs {
+    padding: 32px;
+}
+
+.modal_review_inputs h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.modal_review_inputs .you_can_edit_this {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.modal_review_inputs small {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.modal_review_inputs p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.modal_review_inputs .back__confirm .back {
+    padding-block: 12px;
+    padding-inline: 32px;
+    color: var(--customRed);
+    background-color: white;
+    margin-right: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid var(--customRed);
+}
+
+.modal_review_inputs .back__confirm .confirm {
+    padding-block: 12px;
+    padding-inline: 32px;
+    color: white;
+    background-color: var(--customRed);
+    margin-right: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+}
+
+
+
+
+
+/* schedule kickoff meeting page  */
+
+.location_link> :nth-child(1) {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+}
+
+.location_link {
+    color: #656565;
+}
+
+.schedule__kickoff__container .wrapper .kickoff__header {
+    font-size: 40px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+.schedule__kickoff__container .wrapper .progress_bar {
+    height: 8px;
+    width: 100%;
+    background-color: #e4e4e4;
+    margin-bottom: 67px;
+
+}
+
+.schedule__kickoff__container .wrapper .progress_bar .progress {
+    height: 8px;
+    background-color: #656565;
+    border-radius: 0;
+}
+
+.schedule__kickoff__container .wrapper .jobs_in_q .user_experience_design {
+    max-width: max-content;
+    padding-block: 12px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5000px;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 26, 0.2);
+    background-color: #fff;
+    border: none;
+    margin-bottom: 24px;
+}
+
+.schedule__kickoff__container .wrapper .jobs_in_q .add_another_job {
+    max-width: max-content;
+    padding-block: 10px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #de1c22;
+    border: none;
+    margin-bottom: 218px;
+}
+
+.schedule__kickoff__container .wrapper .calendly_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.schedule__kickoff__container .wrapper .using_calendly {
+    max-width: max-content;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c5de5;
+    padding: 12px 32px;
+    border-radius: 4px;
+    border: solid 1px #2c5de5;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.schedule__kickoff__container .wrapper .using_calendly span {
+    margin-right: 4px;
+}
+
+
+/* post a new job */
+
+
+
+.provide_basic_info_container .first_basic_info {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #a1a1a1;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.provide_basic_info_container .heading {
+    color: #1a1a1a;
+}
+
+.provide_basic_info_container label {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.provide_basic_info_container input {
+    width: 448px;
+    height: 32px;
+    /* adjust height as needed */
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #656565;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+}
+
+.provide_basic_info_container .select-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 160px;
+}
+
+.provide_basic_info_container .select-wrapper .select {
+    display: block;
+    width: 448px;
+    /* adjust width as needed */
+    height: 32px;
+    /* adjust height as needed */
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #656565;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.provide_basic_info_container .select-wrapper .select-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #212529;
+}
+
+.post_a_new_job_button button {
+    max-width: max-content;
+    padding-block: 10px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-inline: 12px;
+    font-weight: 600;
+    align-items: center;
+    gap: 10px;
+    height: max-content;
+    border-radius: 4px;
+    color: #de1c22;
+    background-color: #fff;
+    border: solid 1px #de1c22;
+    margin-bottom: 218px;
+    margin-block: 8px;
+}
+
+.post_a_new_job_button .save {
+    color: white;
+    background-color: #de1c22;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .provide_basic_info_container input,
+    .provide_basic_info_container .select-wrapper .select {
+        width: 80vw;
+    }
+
+    .post_a_new_job_button {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* compensation page */
+.compensation_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.compensation_container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-top: 63px;
+}
+
+
+/* range selector */
+.compensation_selector_container {
+    margin-top: 100px;
+    position: relative;
+}
+
+.compensation_selector_container .whole_range_container {
+    position: relative;
+    height: 60px;
+}
+
+.compensation_selector_container .whole_range_container .initial {
+    position: absolute;
+    top: 38px;
+    left: -5px;
+}
+
+.compensation_selector_container .whole_range_container .max {
+    position: absolute;
+    top: 35px;
+    right: -31px;
+}
+
+.compensation_selector_container .range-slider {
+    position: relative;
+    width: 496px;
+    height: 35px;
+    text-align: center;
+}
+
+.compensation_selector_container .range-slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 15px;
+    width: 496px;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.compensation_selector_container .range-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.compensation_selector_container .range-slider input::range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+}
+
+.compensation_selector_container .range-slider input::range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+}
+
+.compensation_selector_container .range-slider input:last-of-type::range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+
+.compensation_selector_container .range-slider input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+.compensation_selector_container .rangeValue {
+    width: 30px;
+}
+
+.compensation_selector_container .output {
+    position: absolute;
+    border: 1px solid #999;
+    width: max-content;
+    padding: 8px;
+    height: max-content;
+    text-align: center;
+    color: #999;
+    border-radius: 4px;
+    display: inline-block;
+    font: bold 15px/30px Helvetica, Arial;
+    background-color: white;
+    bottom: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.compensation_selector_container .output.outputTwo {
+    left: 100%;
+}
+
+.compensation_selector_container .container {
+    position: relative;
+    padding: 0;
+}
+
+.compensation_selector_container input[type=range] {
+    -webkit-appearance: none;
+    background: none;
+}
+
+.compensation_selector_container input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.compensation_selector_container input[type=range]::-ms-track {
+    height: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.compensation_selector_container input[type=range]::-moz-range-track {
+    height: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.compensation_selector_container input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #555;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+.compensation_selector_container input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #555;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+.compensation_selector_container input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 4px solid #f1f1f1;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #de1c22;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+.compensation_selector_container input[type=range]:focus {
+    outline: none;
+}
+
+.compensation_selector_container .full-range,
+.compensation_selector_container .incl-range {
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 21px;
+    position: absolute;
+    background: #DDD;
+}
+
+.compensation_selector_container .incl-range {
+    background: #de1c22;
+}
+
+@media only screen and (max-width: 900px) {
+    .compensation_selector_container .range-slider {
+        width: 60vw;
+    }
+
+    .compensation_selector_container .range-slider input {
+        width: 60vw;
+    }
+}
+
+/* range selector */
+
+
+.compensation_input_container {
+    margin-top: 64px;
+    justify-content: center;
+    margin-bottom: 104px;
+}
+
+.compensation_input_container input {
+    max-width: 201px;
+    height: 40px;
+    padding-inline: 16px;
+    padding-block: 10px;
+}
+
+.compensation_input_container .custom-select {
+    position: relative;
+    width: max-content;
+}
+
+.compensation_input_container .custom-select input {
+    font-size: 14px;
+    padding: 10px 16px;
+    padding-right: 32px;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.compensation_input_container .custom-select .custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 16px;
+    width: 16px;
+    height: 100%;
+    width: 24px;
+
+}
+
+.compensation_input_container .custom-select .custom-arrow #up,
+.compensation_input_container .custom-select .custom-arrow #down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.compensation_input_container .custom-select .custom-arrow #up {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
+    margin-top: 8px;
+}
+
+.compensation_input_container .custom-select .custom-arrow #down {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    margin-top: 26px;
+}
+
+/* job description create page */
+
+.job_description_create_container {
+    width: 684px;
+    margin-inline: auto;
+}
+
+.job_description_create_container h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.job_description_create_container p {
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+.job_description_create_container textarea {
+    height: 88px;
+    overflow-y: scroll;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.job_description_create_container button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #de1c22;
+    padding: 12px 32px;
+    border-radius: 4px;
+    border: solid 1px #de1c22;
+    background-color: #fff;
+    width: 320px;
+    margin-bottom: 81px;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .job_description_create_container {
+        max-width: 90vw;
+    }
+
+    .wrapper {
+        margin-inline: 0;
+    }
+}
+
+
+/* Include details page */
+.include_details_container {
+    width: 740px;
+    margin-inline: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .include_details_container {
+        max-width: 90vw;
+    }
+}
+
+.include_details_container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+/* bubble selector */
+.include_details_container .category-toggle {
+    display: flex;
+    align-items: flex-end;
+    width: max-content;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    background-color: #e4e4e4;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.include_details_container .category-toggle.checked {
+    background-color: #656565 !important;
+    color: #fff;
+}
+
+.include_details_container .category-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:checked+.tick-sign {
+    display: inline-block;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:not(:checked)+.plus-sign {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.include_details_container .plus-sign,
+.include_details_container .tick-sign {
+    display: none;
+    margin-left: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:checked~.plus-sign {
+    display: none;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:not(:checked)~.tick-sign {
+    display: none;
+}
+
+.include_details_container .category-toggle input[type="checkbox"]:checked~.tick-sign {
+    display: inline-block;
+    color: #fff;
+}
+
+.include_details_container .category-toggle:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.experience .custom-select {
+    position: relative;
+    width: max-content;
+}
+
+.experience .custom-select input {
+    font-size: 14px;
+    padding: 10px 16px;
+    padding-right: 32px;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.experience .custom-select .custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 16px;
+    width: 16px;
+    height: 100%;
+    width: 24px;
+
+}
+
+.experience .custom-select .custom-arrow #up_exp,
+.experience .custom-select .custom-arrow #down_exp {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.experience .custom-select .custom-arrow #up_exp {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
+    margin-top: 8px;
+}
+
+.experience .custom-select .custom-arrow #down_exp {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    margin-top: 30px;
+}
+
+
+/* hires */
+.how_many_hires .custom-select {
+    position: relative;
+    width: max-content;
+}
+
+.how_many_hires .custom-select input {
+    font-size: 14px;
+    padding: 10px 16px;
+    padding-right: 32px;
+    /* pointer-events: none; */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.how_many_hires .custom-select .custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 16px;
+    width: 16px;
+    height: 100%;
+    width: 24px;
+
+}
+
+.how_many_hires .custom-select .custom-arrow #up_hire,
+.how_many_hires .custom-select .custom-arrow #down_hire {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.how_many_hires .custom-select .custom-arrow #up_hire {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid black;
+    margin-top: 8px;
+}
+
+.how_many_hires .custom-select .custom-arrow #down_hire {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    margin-top: 30px;
+}
+
+
+.include_details_container .show_more {
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: left;
+    color: #1a1a1a;
+    padding: 10px 16px;
+    border-radius: 5000px;
+    width: max-content;
+    height: max-content;
+    border: solid 1px #1a1a1a;
+    background-color: #fff;
+}
+
+/* view resume page */
+.resume_page_container {
+    margin-inline: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+    .resume_page_container {
+        margin-inline: 4px;
+    }
+}
+
+.view_next_resume h1 {
+    font-weight: bold;
+    line-height: 1.5;
+    color: #de1c22;
+}
+
+.view_next_resume img {
+    width: 18px;
+    margin-left: 8px;
+}
+
+.resume_page_content_container {}
+
+.resume_info_container {
+    margin-inline: 0;
+}
+
+.resume_info_container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 0;
+    color: #000;
+}
+
+.resume_info_container h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.resume_info_container p {
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+.resume_info_container .user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.resume_info_container h4 {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.resume_info_container small {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #a1a1a1;
+}
+
+.resume_info_container hr {
+    height: 2px;
+    width: 98%;
+    margin-inline: auto;
+    color: #e4e4e4;
+}
+
+.resume_info_container h5 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin-bottom: 28px;
+}
+
+.view_resume_feedback_container div {
+    padding: 16px 11px;
+    border-radius: 4px;
+    ;
+    min-width: 90px;
+    max-height: 100px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view_resume_feedback_container .div_1 {
+    background-color: #d6f3e2;
+    margin-right: 20px;
+}
+
+.view_resume_feedback_container .div_2 {
+    background-color: #e4e4e4;
+    margin-right: 20px;
+}
+
+.view_resume_feedback_container .div_3 {
+    background-color: #f9d3d4;
+}
+
+
+.view_resume_feedback_container img {
+    margin-bottom: 8px;
+}
+
+.view_resume_feedback_container h6 {
+    font-size: 14px;
+    color: #000;
+}
+
+.resume_info_container form input {
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #656565;
+}
+
+.resume_info_container form textarea {
+    height: 100px;
+    padding: 10px 16px 70px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.resume_info_container form button,
+.share_resume_modal button {
+    height: max-content;
+    width: max-content;
+    padding: 10px 24px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #de1c22;
+
+}
+
+.resume_info_container form button:disabled,
+.share_resume_modal button:disabled {
+    background-color: #e4e4e4;
+    color: #a1a1a1;
+}
+
+.resume_page_content_container .row .print_pdf_viewer {
+    background-color: #f1f1f1;
+}
+
+.share_resume_modal input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    background-color: #fff;
+    height: 48px;
+}
+
+.share_resume_modal button {
+    height: 48px;
+}
+
+
+
+/* add a note page  */
+.add_note_button_container {
+    width: 120px;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 26, 0.2);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.add_note_button {
+    background-color: #eef3ff;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+
+
+/* candidates page comment --- add a note existing*/
+.add_a_note_comment {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+
+.write_message_container {
+    margin-inline: 12.5%;
+    margin-bottom: 100px;
+}
+
+.write_message_container .messaging_title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.message_list .search {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+}
+
+.message_list .search input {
+    padding-inline: 12px;
+    padding-block: 8px;
+}
+
+
+.conversations_container {
+    overflow-y: auto;
+    min-height: 750px;
+    max-height: 750px;
+}
+
+.conversations_container img {
+    width: 40px;
+    border-radius: 50%;
+    margin-inline: 8px;
+}
+
+.conversations_container .conversation_card {
+    height: max-content;
+    border-radius: 8px;
+    margin-block: 8px;
+    padding-block: 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.conversations_container .conversation_card.active {
+    background-color: #656565;
+}
+
+
+.conversations_container .conversation_card h5 {
+    color: #000;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-right: 14px;
+    margin-top: 4px;
+}
+
+.conversations_container .conversation_card.active h5 {
+    color: #fff;
+}
+
+.conversations_container .message_user_info h4 {
+    color: #000;
+    font-size: 14px;
+    margin: 0;
+}
+
+.conversations_container .conversation_card.active h4 {
+    color: #fff;
+}
+
+.conversations_container .message_user_info p {
+    font-size: 12px;
+    margin: 0;
+    color: #a1a1a1;
+}
+
+.conversations_container .conversation_card.active p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.chat_message {
+    border-radius: 8px;
+    border: solid 1px #c7c7c7;
+    min-height: 750px;
+    /* overflow-y: scroll; */
+    width: 69%;
+}
+
+.chat_message .chat_header {
+    padding: 24px;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.chat_message .chat_header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.chat_message .chat_header .chat_header_info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.chat_message .chat_header .chat_header_info p {
+    color: #a1a1a1;
+    font-size: 16px;
+    margin: 0;
+}
+
+.chat_message .single_message_container {
+    max-height: 460px;
+    ;
+    overflow-y: scroll;
+}
+
+.chat_message .single_message {
+    padding: 24px;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.chat_message .single_message .info {
+    gap: 16px;
+}
+
+.chat_message .single_message .info .name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.chat_message .single_message .info .time {
+    margin: 0;
+    font-size: 12px;
+    margin-top: 3px;
+    color: #a1a1a1;
+}
+
+.chat_message .single_message .text {
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+.chat_message .single_message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.chat_message .message_input {
+    padding: 24px;
+}
+
+.chat_message .message_input textarea {
+    border-radius: 4px;
+    border: solid 1px #a1a1a1;
+    height: 124px;
+    width: 100%;
+    resize: none;
+}
+
+.chat_message .message_input button {
+    background-color: var(--customRed);
+    color: white;
+}
+
+.chat_message .message_input button[disabled] {
+    background-color: #e4e4e4;
+    color: #a1a1a1;
+}
+
+
+/* add a note dialog */
+.add_a_note_dialog .header{
+    border-bottom: 1px solid #e4e4e4;
+}
+.add_a_note_dialog .header{
+    border-bottom: 1px solid #e4e4e4;
+}
+.add_a_note_dialog .note_text p:first-child{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.add_a_note_dialog .note_text p:last-child{
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: #a1a1a1;
+}
+.add_a_note_dialog .save_note{
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+.add_a_note_dialog .note_text{
+    padding-top: 24px;
+    padding-bottom: 140px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+/* footer section */
+.footer_container {
+    margin-top: auto;
+    padding-inline: 142px;
+    padding-block: 42px;
+    background-color: #363f50;
+    color: #c7c7c7;
+    font-size: 12px;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.copyright {
+    margin-top: 136px;
+    color: #a1a1a1;
+}
+
+.signup_footer {
+    padding-inline: 12px;
+    padding-block: 8px;
+    width: max-content;
+    height: max-content;
+}
+
+.signup_footer button {
+    width: max-content;
+}
+
+@media only screen and (max-width: 992px) {
+    .footer_container {
+        padding-inline: 8px;
+        padding-block: 42px;
+    }
+
+    .footer div {
+        margin-bottom: 42px;
+    }
+}
