@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-AuSA7+P/bYJwR8V1a6gz1/GMj+U6FJ2q/UzU+x0yI85oalGzMfRwV8W1Od6Kn1V7ZlO6Cv9qU3s/KQ2mlIgH4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Recruiting Squad</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <!-- you must import navbar_dropdown.js from js folder for all nav functionalities -->
+    <nav class="d-flex position-relative justify-content-between align-items-center w-100 bg-white ps-lg-5 pt-3 pb-3">
+        <img class="logo" src="./resources/logo.jpeg" alt="logo">
+        <div class="nav__options d-none d-lg-flex justify-content-between align-items-center">
+            <div class="position-relative">
+                <a href="#" class="services link_active fs-6 mx-3 my-0 text-decoration-none">Services</a>
+                <div class="services_trigger nav_dropdown_services position-absolute d-none flex-column gap-3 bg-white">
+                    <a href="#" class="link_inactive">Dedicated Recruiter</a>
+                    <a href="#" class="link_inactive">Condidate Sourcing</a>
+                    <a href="#" class="link_inactive">Resume Screening</a>
+                    <a href="#" class="link_inactive">Reference Checks</a>
+                    <a href="#" class="link_inactive">Background Checks</a>
+                    <a href="#" class="link_inactive">Payroll Services</a>
+                    <a href="#" class="link_inactive">Drug Testing</a>
+                </div>
+            </div>
+            <div class="position-relative">
+                <a href="#" class="industries link_inactive fs-6 mx-3 my-0 text-decoration-none">Industries</a>
+                <div class="industries_trigger nav_dropdown_services position-absolute d-none flex-column gap-3 bg-white">
+                    <a href="#" class="link_inactive">Automotive</a>
+                    <a href="#" class="link_inactive">Healthcare</a>
+                    <a href="#" class="link_inactive">Manufacturing</a>
+                    <a href="#" class="link_inactive">Pharma/Life Sciences</a>
+                    <a href="#" class="link_inactive">Retail</a>
+                    <a href="#" class="link_inactive">Telecom</a>
+                    <a href="#" class="link_inactive">Technology</a>
+                </div>
+            </div>
+            <a href="#" class="link_inactive fs-6 mx-3 my-0 text-decoration-none">Pricing</a>
+            <a href="#" class="link_inactive fs-6 mx-3 my-0 text-decoration-none">Our Recruiters</a>
+            <div class="position-relative">
+                <a href="#" class="resources link_inactive fs-6 mx-3 my-0 text-decoration-none">Resources</a>
+                <div class="resources_trigger nav_dropdown_services nav_resources position-absolute d-none bg-white">
+                    <div class="d-flex flex-column">
+                        <p class="resources_headers">Tools</p>
+                        <a href="#" class="link_inactive fs-6 my-0 text-decoration-none">Cost-per-Hire Calculator</a>
+                        <p>This is a description. This is a description. This is a description.</p>
+                        <a href="#" class="link_inactive fs-6 my-0 text-decoration-none">Agency Comparison Chart</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p class="resources_headers">Resources</p>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">How it Works</a>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Contact Us</a>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Blog</a>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Knowledge Base</a>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">FAQ</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p class="resources_headers">Partners</p>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Programs</a>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Cost-per-Hire Calculator</a>
+                        <p>This is a description. This is a description. This is a description.</p>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Service Providers</a>
+                        <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Resellers</a>
+                    </div>
+                </div>
+            </div>
+            <!-- user container -->
+            <div class="d-flex gap-3">
+                <button class="nav_sign_button rounded-1">Sign in</button>
+                <button class="nav_hire_button border-0 text-white rounded-1">Start Hiring</button>
+            </div>
+        </div>
+        <!-- breadcrumb__menu -->
+        <div class="breadcrumb__menu d-block d-lg-none" id="breadcrumb__menu"></div>
+        <div class="nav__options z-3 border border-dark-subtle p-0 d-none flex-column justify-content-between align-items-center d-lg-none bg-white position-fixed mx-1"
+            id="bread__menus">
+            <a href="#" class="services_mobile link_inactive option fs-6 mx-3 my-3 text-decoration-none">Services</a>
+            <div class="services_mobile_trigger d-none flex-column px-4 gap-3 bg-white">
+                <a href="#" class="link_inactive">Dedicated Recruiter</a>
+                <a href="#" class="link_inactive">Condidate Sourcing</a>
+                <a href="#" class="link_inactive">Resume Screening</a>
+                <a href="#" class="link_inactive">Reference Checks</a>
+                <a href="#" class="link_inactive">Background Checks</a>
+                <a href="#" class="link_inactive">Payroll Services</a>
+                <a href="#" class="link_inactive">Drug Testing</a>
+            </div>
+            <a href="#" class="industries_mobile link_inactive option fs-6 mx-3 my-3 text-decoration-none">Industries</a>
+            <div class="industries_mobile_trigger d-none flex-column px-4 gap-3 bg-white">
+                <a href="#" class="link_inactive">Automotive</a>
+                <a href="#" class="link_inactive">Healthcare</a>
+                <a href="#" class="link_inactive">Manufacturing</a>
+                <a href="#" class="link_inactive">Pharma/Life Sciences</a>
+                <a href="#" class="link_inactive">Retail</a>
+                <a href="#" class="link_inactive">Telecom</a>
+                <a href="#" class="link_inactive">Technology</a>
+            </div>
+            <a href="#" class="link_inactive option fs-6 mx-3 my-3 text-decoration-none">Pricing</a>
+            <a href="#" class="link_inactive option fs-6 mx-3 my-3 text-decoration-none">Our Recruiters</a>
+            <a href="#" class="resources_mobile link_inactive option fs-6 mx-3 my-3 text-decoration-none">Resources</a>
+            <div class="resources_mobile_trigger flex-column bg-white">
+                <div class="d-flex flex-column">
+                    <p class="resources_headers">Tools</p>
+                    <a href="#" class="link_inactive fs-6 my-0 text-decoration-none">Cost-per-Hire Calculator</a>
+                    <p>This is a description. This is a description. This is a description.</p>
+                    <a href="#" class="link_inactive fs-6 my-0 text-decoration-none">Agency Comparison Chart</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="resources_headers">Resources</p>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">How it Works</a>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Contact Us</a>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Blog</a>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Knowledge Base</a>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">FAQ</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="resources_headers">Partners</p>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Programs</a>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Cost-per-Hire Calculator</a>
+                    <p>This is a description. This is a description. This is a description.</p>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Service Providers</a>
+                    <a href="#" class="link_inactive fs-6 my-1 text-decoration-none">Resellers</a>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-1 pb-4">
+                <button class="nav_sign_button mobile rounded-1">Sign in</button>
+                <button class="nav_hire_button mobile border-0 text-white rounded-1">Start Hiring</button>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="footer_container">
+        <div class="footer d-flex flex-column flex-lg-row w-100 justify-content-between">
+            <div class="d-flex flex-column gap-2">
+                <p>Features</p>
+                <a>How it Works</a>
+                <a>Our Team</a>
+                <a>Pricing</a>
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <p>Services</p>
+                <a>Dedicated Recruiter</a>
+                <a>Cost Per Hire</a>
+                <a>Candidate Sourcing</a>
+                <a>Reference Checks</a>
+                <a>Background Checks</a>
+                <a>Payroll Services</a>
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <p>Company</p>
+                <a>About Us</a>
+                <a>Partners</a>
+                <a>Be a Recruiter</a>
+                <a>Privacy Statement</a>
+                <a>Terms & Conditions</a>
+                <a>Security</a>
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <p>Resources</p>
+                <a>Contact Us</a>
+                <a>Blog</a>
+                <a>FAQ</a>
+                <a>Testimonials</a>
+                <a>Cost Per Hire Calculator</a>
+                <a>Agency Comparison Chart</a>
+            </div>
+            <div class="d-flex flex-column">
+                <p>Get Social</p>
+                <div class="d-flex">
+                    <a href="#">
+                        <img src="./resources/linkedin.svg" alt="">
+                        <img src="./resources/facebook.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">The Recruiting Squad, Inc.</p>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/1880e2064a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/navbar_dropdown.js"></script>
+</body>
+
+</html>
