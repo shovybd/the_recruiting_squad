@@ -105,6 +105,7 @@ a {
 
 .jobs__container__parent {
     grid-template-columns: 3fr 1fr;
+    margin-inline: 70px;
 }
 
 .filter__dropdown {
@@ -191,6 +192,20 @@ a {
     background-color: #f9d3d4;
 }
 
+.notification {
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 26, 0.2);
+    background-color: #d6f3e2;
+    color: #1a1a1a;
+    position: fixed;
+    left: 72%;
+    bottom: 79%;
+    width: 360px;
+
+    font-size: 14px;
+}
+
 .page__title {
     margin-bottom: 32px;
 }
@@ -214,8 +229,13 @@ a {
 }
 
 .filter__button {
-    border-color: #c7c7c7;
+    border: 1px solid #c7c7c7;
     width: 300px;
+}
+
+.filter__button:hover {
+    border: 1px solid #c7c7c7;
+
 }
 
 .filter__button span {
@@ -234,8 +254,47 @@ thead {
     padding-inline: 12px;
     max-width: fit-content;
     font-size: 12px;
-    background-color: #ffe1be;
+    background-color: #f9d3d4;
     color: #e86825;
+}
+
+.status {
+    padding-inline: 12px;
+    max-width: fit-content;
+    font-size: 12px;
+    background-color: #f9d3d4;
+    color: var(--customRed);
+
+}
+
+.status_progress {
+
+    background-color: #c8d8ff;
+    color: #2c5de5;
+}
+
+.status_hold {
+
+    background-color: #b4b4b4;
+    color: #fff;
+}
+
+.progress-bar {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(var(--customRed) 25%, #f9d3d4 0);
+
+}
+
+.pool {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #656565;
+    color: white;
 }
 
 .pool_open {
@@ -243,13 +302,272 @@ thead {
     color: #008556;
 }
 
+.back_button {
+    color: black;
+}
+
 .table__container {
     max-width: 100%;
     overflow-x: auto;
 }
 
+.table input {
+    width: 16px;
+    height: 16px;
+}
+
 .table__font {
     font-size: 14px;
+}
+
+.job_table_row {
+    padding: 14px 69px 20px 16px;
+
+
+    background-color: #f7f7f8;
+    /* border-top: 15px solid white; */
+
+
+}
+
+.form__container__parent {
+    margin: 0 26%;
+}
+
+.payment__container__parent {
+    margin: 0 15%;
+}
+
+.form_header {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-content: center;
+}
+
+.form_header .title {
+    text-align: center;
+
+    width: 85%;
+
+}
+
+.fill_form_title {
+    font-size: 20px;
+}
+
+.fill_form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.fill_form select,
+input {
+    width: 100%;
+    height: 40px;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    background-color: #fff;
+    font-size: 14px;
+
+
+}
+
+.fill_form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 8px;
+
+}
+
+.form_field_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.fill_form .fill_form_item {
+    margin-bottom: 25px;
+}
+
+.fill-form-Button-disable {
+    width: 310px;
+    height: 48px;
+    margin: 25px 0 200px 0;
+    text-align: center;
+    padding: 12px 32px;
+    border-radius: 4px;
+    background-color: #e4e4e4;
+    color: #a1a1a1;
+}
+
+.fill-form-Button-enable {
+    width: 310px;
+    height: 48px;
+    margin: 25px 0 200px 0;
+    text-align: center;
+    padding: 12px 32px;
+    border-radius: 4px;
+    background-color: var(--customRed);
+    color: white;
+}
+
+.fill_form .submit-button {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.time_warning {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #198323;
+    padding: 15px 0;
+    border-radius: 8px;
+    border: solid 1px #279832;
+    background-color: #d9ffe6;
+}
+
+.time_warning .pool {
+    background-color: #000;
+    padding: 10px 6.8px 10px 7px;
+}
+
+.job_type {
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.pay_card {
+    width: 49%;
+    height: 185px;
+    padding: 20px 24px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 26, 0.2);
+    border: solid 1px #1a1a1a;
+    background-color: #fff;
+}
+
+.pay_card .cost {
+    text-align: end;
+    position: relative;
+    left: 5%;
+    top: 40%;
+
+}
+
+.cost_container {
+    padding: 19px 27.3px 19px 26px;
+    border-radius: 8px;
+    border: solid 1px var(--customRed);
+    background-color: #f9d3d4;
+    color: var(--customRed);
+    width: 454px;
+    height: 62px;
+
+}
+
+.cost_container_disable {
+    padding: 19px 27.3px 19px 26px;
+    border-radius: 8px;
+    border: solid 1px #c7c7c7;
+    background-color: #f6f6f6;
+    color: #a1a1a1;
+    width: 454px;
+    height: 62px;
+}
+
+.option_selected {
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 26, 0.2);
+    border: solid 1px #de1c22;
+    background-color: #f9d3d4;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.checkbox input {
+    height: 15px;
+    width: 12px;
+    margin-right: 10px;
+
+}
+
+.checkbox small {
+    font-size: 12px;
+}
+
+.selling_point {
+    margin-bottom: 10px;
+}
+
+.pay_option_button {
+    /* height: 48px; */
+    padding: 14px 12.8px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pay_option_button:hover {
+    filter: brightness(80%);
+}
+
+.pay_option_button img {
+    width: 94.1px;
+    height: 21.2px;
+    object-fit: contain;
+}
+
+.bg-am {
+    background-color: #f6c757;
+}
+
+.bg-bl {
+    background-color: #000;
+}
+
+.bg-gr {
+    background-color: #e4e4e4;
+    color: #a1a1a1;
+}
+
+.bg-re {
+    background-color: var(--customRed);
+    color: white;
+}
+
+.payment_summery {
+    padding: 20px 19px 24px;
+    border-radius: 8px;
+    border: solid 1px #c7c7c7;
 }
 
 .ellipsis__menu {
@@ -1956,29 +2274,34 @@ thead {
 
 
 /* add a note dialog */
-.add_a_note_dialog .header{
+.add_a_note_dialog .header {
     border-bottom: 1px solid #e4e4e4;
 }
-.add_a_note_dialog .header{
+
+.add_a_note_dialog .header {
     border-bottom: 1px solid #e4e4e4;
 }
-.add_a_note_dialog .note_text p:first-child{
+
+.add_a_note_dialog .note_text p:first-child {
     font-size: 16px;
     line-height: 1.5;
 }
-.add_a_note_dialog .note_text p:last-child{
+
+.add_a_note_dialog .note_text p:last-child {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.4px;
     color: #a1a1a1;
 }
-.add_a_note_dialog .save_note{
+
+.add_a_note_dialog .save_note {
     border: 1px solid #c7c7c7;
     border-radius: 4px;
     margin-top: 32px;
     margin-bottom: 24px;
 }
-.add_a_note_dialog .note_text{
+
+.add_a_note_dialog .note_text {
     padding-top: 24px;
     padding-bottom: 140px;
     border-bottom: 1px solid #e4e4e4;
@@ -2027,3 +2350,16 @@ thead {
         margin-bottom: 42px;
     }
 }
+
+td.extra_row {
+    height: 10px; 
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* table.johnsmithtable tr.johnsmith {
+    border: 0 !important;
+    border-color: #ffffff !important;
+
+}
+ */
